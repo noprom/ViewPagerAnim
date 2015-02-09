@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
 
         mViewPager = (ViewPager) findViewById(R.id.id_viewpager);
         // 为ViewPager添加动画效果
-        mViewPager.setPageTransformer(true,new CubeOutTransformer());
+        mViewPager.setPageTransformer(true,new DepthPageTransformer());
 
         // 设置适配器
         mViewPager.setAdapter(new PagerAdapter() {
